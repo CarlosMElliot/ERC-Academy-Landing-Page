@@ -1,0 +1,37 @@
+body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; background-color: #020617; }
+        .glass { background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(12px); }
+        .hero-bg {
+            background: linear-gradient(rgba(2, 6, 23, 0.8), rgba(2, 6, 23, 0.95)),
+            url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop');
+            background-size: cover; background-position: center;
+        }
+        .text-glow { text-shadow: 0 0 30px rgba(59, 130, 246, 0.5); }
+        .timeline-line::before { content: ''; position: absolute; left: 50%; transform: translateX(-50%); width: 2px; height: 100%; background: #1e293b; z-index: 0; }
+        @media (max-width: 768px) { .timeline-line::before { left: 20px; } }
+        .price-card { transition: all 0.3s ease; border: 1px solid #1e293b; }
+        .price-card:hover { transform: translateY(-5px); border-color: #3b82f6; }
+        
+        /* Estilos del Formulario Multi-paso */
+        .step { display: none; }
+        .step.active { display: block; animation: fadeIn 0.4s ease-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .progress-bar { transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2364748b'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 1rem center; background-size: 1em; }
+        #success-message { display: none; }
+        #success-message.active { display: flex; animation: fadeIn 0.6s ease-out; }
+
+        /* --- NUEVOS ESTILOS: SCROLLBAR PARA RESEÑAS --- */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 5px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f8fafc; /* Color muy claro para el fondo */
+            border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #cbd5e1; /* Gris suave que resalta sobre blanco */
+            border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8; /* Se oscurece un poco al pasar el mouse */
+        }
