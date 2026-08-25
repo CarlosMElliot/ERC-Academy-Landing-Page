@@ -9,7 +9,7 @@
         const formHeader = document.getElementById("form-header");
         const successMsg = document.getElementById("success-message");
 
-        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyCntRn6um_MklaWFbHqPjmEXcnNLi_my5gGv8gSMRI7OpKlyNcQXfsrDXyo8NYuheIhA/exec"; 
+        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycby1Iwk1-oVWakYdSBsmU6JVWUj3-tIgi4nxDf7Kw0R8ynnR7j57RVctOQtlUGwakRcv0A/exec"; 
         let currentStep = 0;
 
         function toggleField(triggerId, targetIds, requiredValue) {
